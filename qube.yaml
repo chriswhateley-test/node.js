@@ -1,0 +1,32 @@
+id: 5327aec1-9de5-45c0-9a39-a14c00539965
+version: v2
+name: Qube1
+apptype: api
+language: nodejs
+containerName: qube1
+toolchain:
+  id: 
+  name: Default Toolchain
+opinion:
+  id: 5900bdb1e936e0000b151369
+  name: Qubeship default opinion
+endpoint:
+  id: 
+  name: Default Endpoint
+  type: 
+variables:
+  - name: APP_VERSION
+    value: v0.1
+build:
+  compile:
+    publish:
+     - target/
+bake:
+  skip: false
+test:
+  skip: true
+deploy_to_qa:
+  skip: true
+deploy_to_prod:
+  skip: false
+
